@@ -1,0 +1,316 @@
+{
+ "places": [
+  {
+   "id": "ChIJfixture1",
+   "displayName": {
+    "text": "Kingsway Barber Co."
+   },
+   "formattedAddress": "20330 Fraser Hwy, Langley, BC V3A 4E6, Canada",
+   "nationalPhoneNumber": "(604) 555-0142",
+   "internationalPhoneNumber": "+1 604 555-0142",
+   "websiteUri": null,
+   "rating": 4.8,
+   "userRatingCount": 212,
+   "businessStatus": "OPERATIONAL",
+   "primaryTypeDisplayName": {
+    "text": "Barber shop"
+   },
+   "regularOpeningHours": {
+    "weekdayDescriptions": [
+     "Monday: 9:00 AM \u2013 6:00 PM",
+     "Tuesday: 9:00 AM \u2013 6:00 PM",
+     "Wednesday: 9:00 AM \u2013 6:00 PM",
+     "Thursday: 9:00 AM \u2013 7:00 PM",
+     "Friday: 9:00 AM \u2013 7:00 PM",
+     "Saturday: 9:00 AM \u2013 4:00 PM",
+     "Sunday: Closed"
+    ]
+   },
+   "googleMapsUri": "https://maps.google.com/?cid=1001",
+   "location": {
+    "latitude": 49.104,
+    "longitude": -122.66
+   },
+   "reviews": [
+    {
+     "text": {
+      "text": "Great service, friendly and quick. Always leave happy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ChIJfixture2",
+   "displayName": {
+    "text": "Golden Crust Bakery"
+   },
+   "formattedAddress": "5501 204 St, Langley, BC V3A 5N8, Canada",
+   "nationalPhoneNumber": "(604) 555-0199",
+   "internationalPhoneNumber": "+1 604 555-0199",
+   "websiteUri": "https://www.facebook.com/goldencrust",
+   "rating": 4.6,
+   "userRatingCount": 87,
+   "businessStatus": "OPERATIONAL",
+   "primaryTypeDisplayName": {
+    "text": "Bakery"
+   },
+   "regularOpeningHours": {
+    "weekdayDescriptions": [
+     "Monday: 9:00 AM \u2013 6:00 PM",
+     "Tuesday: 9:00 AM \u2013 6:00 PM",
+     "Wednesday: 9:00 AM \u2013 6:00 PM",
+     "Thursday: 9:00 AM \u2013 7:00 PM",
+     "Friday: 9:00 AM \u2013 7:00 PM",
+     "Saturday: 9:00 AM \u2013 4:00 PM",
+     "Sunday: Closed"
+    ]
+   },
+   "googleMapsUri": "https://maps.google.com/?cid=1002",
+   "location": {
+    "latitude": 49.104,
+    "longitude": -122.66
+   },
+   "reviews": [
+    {
+     "text": {
+      "text": "Great service, friendly and quick. Always leave happy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ChIJfixture3",
+   "displayName": {
+    "text": "Lumi Nails & Spa"
+   },
+   "formattedAddress": "19705 Fraser Hwy, Langley, BC V3A 7E9, Canada",
+   "nationalPhoneNumber": "(604) 555-0110",
+   "internationalPhoneNumber": "+1 604 555-0110",
+   "websiteUri": null,
+   "rating": 4.7,
+   "userRatingCount": 143,
+   "businessStatus": "OPERATIONAL",
+   "primaryTypeDisplayName": {
+    "text": "Nail salon"
+   },
+   "regularOpeningHours": {
+    "weekdayDescriptions": [
+     "Monday: 9:00 AM \u2013 6:00 PM",
+     "Tuesday: 9:00 AM \u2013 6:00 PM",
+     "Wednesday: 9:00 AM \u2013 6:00 PM",
+     "Thursday: 9:00 AM \u2013 7:00 PM",
+     "Friday: 9:00 AM \u2013 7:00 PM",
+     "Saturday: 9:00 AM \u2013 4:00 PM",
+     "Sunday: Closed"
+    ]
+   },
+   "googleMapsUri": "https://maps.google.com/?cid=1003",
+   "location": {
+    "latitude": 49.104,
+    "longitude": -122.66
+   },
+   "reviews": [
+    {
+     "text": {
+      "text": "Great service, friendly and quick. Always leave happy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ChIJfixture4",
+   "displayName": {
+    "text": "Fraser Valley Lawn Pros"
+   },
+   "formattedAddress": "Langley, BC, Canada",
+   "nationalPhoneNumber": "(604) 555-0177",
+   "internationalPhoneNumber": "+1 604 555-0177",
+   "websiteUri": null,
+   "rating": 4.9,
+   "userRatingCount": 36,
+   "businessStatus": "OPERATIONAL",
+   "primaryTypeDisplayName": {
+    "text": "Landscaper"
+   },
+   "regularOpeningHours": {
+    "weekdayDescriptions": [
+     "Monday: 9:00 AM \u2013 6:00 PM",
+     "Tuesday: 9:00 AM \u2013 6:00 PM",
+     "Wednesday: 9:00 AM \u2013 6:00 PM",
+     "Thursday: 9:00 AM \u2013 7:00 PM",
+     "Friday: 9:00 AM \u2013 7:00 PM",
+     "Saturday: 9:00 AM \u2013 4:00 PM",
+     "Sunday: Closed"
+    ]
+   },
+   "googleMapsUri": "https://maps.google.com/?cid=1004",
+   "location": {
+    "latitude": 49.104,
+    "longitude": -122.66
+   },
+   "reviews": [
+    {
+     "text": {
+      "text": "Great service, friendly and quick. Always leave happy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ChIJfixture5",
+   "displayName": {
+    "text": "Has A Website Auto"
+   },
+   "formattedAddress": "Langley, BC",
+   "nationalPhoneNumber": "(604) 555-0101",
+   "internationalPhoneNumber": "+1 604 555-0101",
+   "websiteUri": "https://hasawebsite.ca",
+   "rating": 4.5,
+   "userRatingCount": 90,
+   "businessStatus": "OPERATIONAL",
+   "primaryTypeDisplayName": {
+    "text": "Auto repair shop"
+   },
+   "regularOpeningHours": {
+    "weekdayDescriptions": [
+     "Monday: 9:00 AM \u2013 6:00 PM",
+     "Tuesday: 9:00 AM \u2013 6:00 PM",
+     "Wednesday: 9:00 AM \u2013 6:00 PM",
+     "Thursday: 9:00 AM \u2013 7:00 PM",
+     "Friday: 9:00 AM \u2013 7:00 PM",
+     "Saturday: 9:00 AM \u2013 4:00 PM",
+     "Sunday: Closed"
+    ]
+   },
+   "googleMapsUri": "https://maps.google.com/?cid=1005",
+   "location": {
+    "latitude": 49.104,
+    "longitude": -122.66
+   },
+   "reviews": [
+    {
+     "text": {
+      "text": "Great service, friendly and quick. Always leave happy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ChIJfixture6",
+   "displayName": {
+    "text": "Meh Cleaners"
+   },
+   "formattedAddress": "Langley, BC",
+   "nationalPhoneNumber": "(604) 555-0102",
+   "internationalPhoneNumber": "+1 604 555-0102",
+   "websiteUri": null,
+   "rating": 3.1,
+   "userRatingCount": 40,
+   "businessStatus": "OPERATIONAL",
+   "primaryTypeDisplayName": {
+    "text": "Dry cleaner"
+   },
+   "regularOpeningHours": {
+    "weekdayDescriptions": [
+     "Monday: 9:00 AM \u2013 6:00 PM",
+     "Tuesday: 9:00 AM \u2013 6:00 PM",
+     "Wednesday: 9:00 AM \u2013 6:00 PM",
+     "Thursday: 9:00 AM \u2013 7:00 PM",
+     "Friday: 9:00 AM \u2013 7:00 PM",
+     "Saturday: 9:00 AM \u2013 4:00 PM",
+     "Sunday: Closed"
+    ]
+   },
+   "googleMapsUri": "https://maps.google.com/?cid=1006",
+   "location": {
+    "latitude": 49.104,
+    "longitude": -122.66
+   },
+   "reviews": [
+    {
+     "text": {
+      "text": "Great service, friendly and quick. Always leave happy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ChIJfixture7",
+   "displayName": {
+    "text": "Starbucks"
+   },
+   "formattedAddress": "Langley, BC",
+   "nationalPhoneNumber": "(604) 555-0103",
+   "internationalPhoneNumber": "+1 604 555-0103",
+   "websiteUri": null,
+   "rating": 4.2,
+   "userRatingCount": 500,
+   "businessStatus": "OPERATIONAL",
+   "primaryTypeDisplayName": {
+    "text": "Coffee shop"
+   },
+   "regularOpeningHours": {
+    "weekdayDescriptions": [
+     "Monday: 9:00 AM \u2013 6:00 PM",
+     "Tuesday: 9:00 AM \u2013 6:00 PM",
+     "Wednesday: 9:00 AM \u2013 6:00 PM",
+     "Thursday: 9:00 AM \u2013 7:00 PM",
+     "Friday: 9:00 AM \u2013 7:00 PM",
+     "Saturday: 9:00 AM \u2013 4:00 PM",
+     "Sunday: Closed"
+    ]
+   },
+   "googleMapsUri": "https://maps.google.com/?cid=1007",
+   "location": {
+    "latitude": 49.104,
+    "longitude": -122.66
+   },
+   "reviews": [
+    {
+     "text": {
+      "text": "Great service, friendly and quick. Always leave happy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ChIJfixture8",
+   "displayName": {
+    "text": "Closed Tailor"
+   },
+   "formattedAddress": "Langley, BC",
+   "nationalPhoneNumber": "(604) 555-0104",
+   "internationalPhoneNumber": "+1 604 555-0104",
+   "websiteUri": null,
+   "rating": 4.9,
+   "userRatingCount": 20,
+   "businessStatus": "CLOSED_PERMANENTLY",
+   "primaryTypeDisplayName": {
+    "text": "Tailor"
+   },
+   "regularOpeningHours": {
+    "weekdayDescriptions": [
+     "Monday: 9:00 AM \u2013 6:00 PM",
+     "Tuesday: 9:00 AM \u2013 6:00 PM",
+     "Wednesday: 9:00 AM \u2013 6:00 PM",
+     "Thursday: 9:00 AM \u2013 7:00 PM",
+     "Friday: 9:00 AM \u2013 7:00 PM",
+     "Saturday: 9:00 AM \u2013 4:00 PM",
+     "Sunday: Closed"
+    ]
+   },
+   "googleMapsUri": "https://maps.google.com/?cid=1008",
+   "location": {
+    "latitude": 49.104,
+    "longitude": -122.66
+   },
+   "reviews": [
+    {
+     "text": {
+      "text": "Great service, friendly and quick. Always leave happy."
+     }
+    }
+   ]
+  }
+ ]
+}
