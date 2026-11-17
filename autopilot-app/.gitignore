@@ -1,6 +1,0 @@
-.env
-config.yaml
-data/
-out/
-__pycache__/
-fixtures/inbox/*.done
