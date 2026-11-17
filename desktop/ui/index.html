@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autopilot</title>
+<link rel="icon" href="/ui/icon.png">
+<link rel="stylesheet" href="/ui/styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand">
+      <img src="/ui/icon.png" alt="" class="brand-mark">
+      <div><b>Autopilot</b><small id="brandName">Web studio</small></div>
+    </div>
+
+    <nav id="nav">
+      <a data-view="overview" class="active"><i data-i="home"></i>Overview</a>
+      <a data-view="leads"><i data-i="users"></i>Leads</a>
+      <a data-view="inbox"><i data-i="inbox"></i>Needs you<span class="badge" id="needsBadge" hidden>0</span></a>
+      <a data-view="sites"><i data-i="globe"></i>Websites</a>
+      <a data-view="activity"><i data-i="pulse"></i>Activity</a>
+      <a data-view="settings"><i data-i="gear"></i>Settings</a>
+    </nav>
+
+    <div class="pilot" id="pilot">
+      <div class="pilot-top">
+        <span class="pilot-label">Autopilot</span>
+        <button class="switch" id="pilotSwitch" role="switch" aria-checked="false" aria-label="Autopilot"><span></span></button>
+      </div>
+      <div class="pilot-status" id="pilotStatus"><span class="dot"></span><span>Paused</span></div>
+      <div class="pilot-sub" id="pilotSub">Switch on to start finding clients</div>
+      <button class="btn btn-side" id="runNow"><i data-i="play"></i>Run once now</button>
+      <div class="mode-pill" id="modePill" hidden><i data-i="flask"></i>Test mode</div>
+    </div>
+  </aside>
+
+  <main class="main" id="main"></main>
+</div>
+
+<div class="drawer-scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true"></aside>
+<div class="toasts" id="toasts"></div>
+<div class="modal" id="modal" hidden></div>
+
+<script src="/ui/app.js"></script>
+</body>
+</html>

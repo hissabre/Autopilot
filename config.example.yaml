@@ -1,0 +1,116 @@
+# ─────────────────────────────────────────────────────────────
+#  AUTOPILOT — autonomous web-studio pipeline
+#  Copy to config.yaml and fill in. Secrets go in .env, not here.
+# ─────────────────────────────────────────────────────────────
+
+test_mode: true                 # true = safe simulation: no real searches, emails or sites
+setup_done: false
+interval_min: 60                # desktop app: minutes between autopilot runs
+autopilot_on_launch: true       # desktop app: resume the autopilot when the app opens
+keep_running_in_tray: true      # desktop app: closing the window keeps it working in the tray
+
+# Placeholder brand — rename before going live. Use a SEPARATE domain
+# for outreach so cold email never affects your main business domain.
+brand:
+  name: "Nova Web Studio"
+  website: "https://novawebstudio.example"
+  sender_name: "Hamadoun"
+  sender_email: "hello@novawebstudio.example"   # must be a verified domain in Resend
+  reply_to: "hello@novawebstudio.example"       # mailbox the inbox poller reads
+  postal_address: "123 Example St, Langley, BC V0V 0V0, Canada"  # REQUIRED by CASL / CAN-SPAM
+  phone: ""
+  whatsapp: ""                                   # e.g. +22370000000 (used in FR/Africa markets)
+  booking_url: ""                                # Calendly / Cal.com link (optional)
+  unsubscribe_base_url: ""                       # e.g. https://dash.yourdomain.com/u  (optional; mailto is always included)
+
+# Plans offered after a positive reply. Prices per currency.
+plans:
+  - id: starter
+    name: { en: "Starter", fr: "Essentiel" }
+    features:
+      en: ["Your website, live on your own domain", "Hosting + SSL included", "Up to 2 small edits / month"]
+      fr: ["Votre site en ligne sur votre propre domaine", "Hébergement + SSL inclus", "Jusqu'à 2 petites modifications / mois"]
+    price: { CAD: { setup: 0,   monthly: 39 },  USD: { setup: 0,   monthly: 29 },  XOF: { setup: 0,     monthly: 10000 } }
+    payment_link: { CAD: "", USD: "", XOF: "" }  # Stripe / Wave / Orange Money links
+  - id: growth
+    name: { en: "Growth", fr: "Croissance" }
+    features:
+      en: ["Everything in Starter", "Google Business Profile optimisation", "Online booking or order form", "Unlimited small edits"]
+      fr: ["Tout l'Essentiel", "Optimisation fiche Google", "Réservation ou commande en ligne", "Modifications illimitées"]
+    price: { CAD: { setup: 149, monthly: 79 },  USD: { setup: 99,  monthly: 59 },  XOF: { setup: 25000, monthly: 20000 } }
+    payment_link: { CAD: "", USD: "", XOF: "" }
+
+# Markets. Add as many as you like; each run rotates through enabled ones.
+markets:
+  - id: langley-bc
+    enabled: true
+    city: "Langley, BC, Canada"
+    country: CA
+    language: en
+    currency: CAD
+    timezone: "America/Vancouver"
+    law: casl                       # casl | canspam | generic
+    queries: ["barber shop", "hair salon", "landscaping", "auto repair", "cleaning service", "bakery", "nail salon"]
+  - id: bamako
+    enabled: false
+    city: "Bamako, Mali"
+    country: ML
+    language: fr
+    currency: XOF
+    timezone: "Africa/Bamako"
+    law: generic
+    queries: ["salon de coiffure", "restaurant", "boutique", "garage automobile", "pressing", "pâtisserie"]
+  - id: abidjan
+    enabled: false
+    city: "Abidjan, Côte d'Ivoire"
+    country: CI
+    language: fr
+    currency: XOF
+    timezone: "Africa/Abidjan"
+    law: generic
+    queries: ["salon de coiffure", "restaurant", "maquis", "boutique de vêtements", "garage"]
+
+# Who is worth a site: an active business that customers already like.
+qualify:
+  min_rating: 3.8
+  min_reviews: 5
+  treat_social_as_no_website: true     # facebook/instagram-only counts as "no website"
+  skip_chains: true
+
+# Safety rails. Fully automatic still means bounded.
+limits:
+  max_new_prospects_per_run: 40
+  max_sites_per_run: 15
+  max_emails_per_day: 25              # hard ceiling after warm-up
+  warmup_start: 5                     # day-1 cap; grows by warmup_step/day
+  warmup_step: 3
+  send_window_local: [9, 16]          # only send 9:00–16:59 in the market's timezone, Mon–Fri
+  followup_after_days: 4
+  max_followups: 1
+  takedown_demo_after_days: 30        # remove unclaimed demo sites
+  max_auto_replies_per_thread: 3      # after that, flag for a human
+
+ai:
+  model: "claude-sonnet-5-5"
+  web_search_tool: "web_search_20250305"
+  max_searches_per_lead: 4
+
+deploy:
+  provider: netlify                    # netlify | local
+  site_prefix: "demo"                  # sites look like demo-joes-barber-ab12.netlify.app
+
+email:
+  provider: resend                     # resend | outbox (writes .eml files, for testing)
+
+inbox:
+  provider: imap                       # imap | none
+  host: "imap.gmail.com"
+  port: 993
+  folder: "INBOX"
+
+# AI voice: ONLY calls people who replied and asked for a call or gave a number.
+# Cold AI-voice calls are illegal in the US (TCPA / FCC 2024) and restricted in Canada (CRTC).
+voice:
+  enabled: false
+  provider: vapi
+  call_window_local: [10, 17]
